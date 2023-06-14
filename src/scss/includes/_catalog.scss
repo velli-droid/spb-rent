@@ -1,0 +1,11 @@
+.catalog {
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 4rem 3.2rem;
+    }
+    &__more-btn {
+        width: 38.4rem;
+        margin: 4rem auto 0;
+    }
+}

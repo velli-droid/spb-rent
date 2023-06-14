@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="logo" viewBox="0 0 37 26">
+        <path d="M0 24.1247H5.90776M37 24.1247H31.257M18.5 24.1247V2L11.7214 7.0369L11.8155 24.1247M18.5 24.1247H11.8155M18.5 24.1247H31.257M11.8155 24.1247H5.90776M5.90776 24.1247L5.9313 15.0394L18.7354 9.15522L31.257 13.2977V24.1247" stroke-width="2"/>
+    </symbol>
+    <symbol id="user" viewBox="0 0 24 24">
+        <path d="M4 21V15H20V21" stroke="#006CFF" stroke-width="2"/>
+        <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#006CFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="swiper-arrow" viewBox="0 0 24 24">
+       <path d="M8.59 16.59L10 18L16 12L10 6L8.59 7.41L13.17 12L8.59 16.59Z"/>
+    </symbol>
+    <symbol id="arrow-up-right" viewBox="0 0 32 32">
+        <path d="M9.33325 22.6666L22 10" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+        <path d="M9.33325 9.33325H22.6666V22.6666" stroke-width="2" stroke-linecap="square"/>
+    </symbol>
+</svg>

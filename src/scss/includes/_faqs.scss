@@ -1,0 +1,55 @@
+.faqs {
+    &__accordion {
+        display: flex;
+        flex-direction: column;
+        &-item {
+            border-bottom: 1px solid #BFBFBF;
+            &.active {
+                .faqs {
+                    &__accordion {
+                        &-head {
+                            &::after {
+                                transform: translateY(-50%);
+                            }
+                        }
+                        &-body {
+                            max-height: none;
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+        &-head {
+            position: relative;
+            width: 100%;
+            padding-right: 3.2rem;
+            font-weight: 500;
+            font-size: 2.4rem;
+            line-height: 1.33;
+            color: #383838;
+            opacity: 0.8;
+            padding: 2rem 0;
+            cursor: pointer;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%) rotate(-45deg);
+                display: block;
+                width: 3.2rem;
+                height: 3.2rem;
+                background: url(/assets/svg/plus.svg) no-repeat center;
+                background-size: contain;
+                transition: .3s ease;
+            }
+        }
+        &-body {
+            overflow: hidden;
+            max-height: 0;
+            max-width: 50%;
+            transition: .3s ease;
+        }
+    }
+}

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Istok+Web&display=swap" rel="stylesheet">
+    <title>SPB.RENT.APARTMENT</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="#" class="header__logo">
+            <div class="header__logo-icon">
+              <svg class="icon-svg">
+                <use xlink:href="/assets/svg/sprite.svg#logo"></use>
+              </svg>
+            </div>
+            <div class="header__logo-text">
+              SPB.RENT.APARTMENT
+            </div>
+          </a>
+          <nav class="header__nav">
+            <a href="#" class="header__nav-link">
+              Преимущества
+            </a>
+            <a href="#" class="header__nav-link">
+              Апартаменты
+            </a>
+            <a href="#" class="header__nav-link">
+              Отзывы
+            </a>
+            <a href="#" class="header__nav-link">
+              Ответы на вопросы
+            </a>
+
+          </nav>
+          <div class="header__actions">
+            <div class="header__actions-location">
+              Санкт-Петербург
+            </div>
+            <a href="#" class="header__actions-phone">
+              8 953 757 0288
+            </a>
+            <a href="#" class="header__actions-auth">
+              <svg class="icon-svg">
+                <use xlink:href="/assets/svg/sprite.svg#user"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="intro">
+        <div class="container">
+          <div class="intro__inner">
+            <div class="intro__bg">
+              <img src="/assets/img/intro.png" alt="">
+            </div>
+            <div class="intro__title">
+              <h1>Апартаменты и квартиры в Санкт-Петербурге</h1> 
+            </div>
+            <div class="intro__text">
+              Онлайн-агрегатор для посуточной аренды
+            </div>
+            <form action="#" class="intro__form">
+              <div class="intro__form-fields">
+                <div class="form-group">
+                  <input type="text" class="form-group__input" id="input-date-1" placeholder=" ">
+                  <label for="input-date-1" class="form-group__label">
+                    Заезд
+                  </label>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-group__input" id="input-date-2" placeholder=" ">
+                  <label for="input-date-2" class="form-group__label">
+                    Отъезд
+                  </label>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-group__input" id="input-count" placeholder=" ">
+                  <label for="input-count" class="form-group__label">
+                    Количество гостей
+                  </label>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-group__input" id="input-5" placeholder=" ">
+                  <label for="input-5" class="form-group__label">
+                    Промокод
+                  </label>
+                </div>
+              </div>
+              <div class="intro__form-actions">
+                <div class="form-submit">
+                  <button type="submit" class="form-submit__btn btn">
+                    Найти
+                  </button>
+                </div>
+                <a href="#" class="intro__form-map btn btn_secondary">
+                  Показать на карте
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <div class="advantages__inner">
+            <div class="advantages__title section-title">
+              <h2>Наши преимущества</h2>
+              <span class="section-title__text">
+                В Вашем распоряжении 30 дизайнерских квартир «Comfort plus» и «Business» класса, напрямую от создателя объектов
+              </span>
+            </div>
+            <div class="advantages__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="advantages__card">
+                    <div class="advantages__card-bg">
+                      <img src="/assets/img/adv-1.png" alt="">
+                    </div>
+                    <div class="advantages__card-text">
+                      Современные видовые апартаменты
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="advantages__card">
+                    <div class="advantages__card-bg">
+                      <img src="/assets/img/adv-2.png" alt="">
+                    </div>
+                    <div class="advantages__card-text">
+                      Квартиры с новой мебельюв актуальном стиле
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="advantages__card">
+                    <div class="advantages__card-bg">
+                      <img src="/assets/img/adv-3.png" alt="">
+                    </div>
+                    <div class="advantages__card-text">
+                      Удаленное заселениепо личному паролю
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="advantages__card">
+                    <div class="advantages__card-bg">
+                      <img src="/assets/img/adv-4.png" alt="">
+                    </div>
+                    <div class="advantages__card-text">
+                      Трансфер по договоренности
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog__inner">
+            <div class="catalog__title section-title">
+              <h2>Апартаменты</h2>
+            </div>
+            <div class="catalog__grid">
+              <div class="catalog-card">
+                <div class="catalog-card__swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="/assets/img/card.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/img/card.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/img/card.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/img/card.png" alt="">
+                    </div>
+                  </div>
+                  <div class="catalog-card__swiper-controls">
+                    <div class="swiper-btn catalog-card__swiper-prev">
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-btn catalog-card__swiper-next">
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="catalog-card__content">
+                  <div class="catalog-card__title">
+                    ЖК "Три ветра" с видом на Газпром Арену
+                  </div>
+                  <div class="catalog-card__address">
+                    Адрес: г. Санкт-Петербург, ул. Ропшинская дом 4.
+                  </div>
+                  <div class="catalog-card__price">
+                    от 5000 р/ в сутки
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-card">
+                <div class="catalog-card__swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="/assets/img/card.png" alt="">
+                    </div>
+                  </div>
+                  <div class="catalog-card__swiper-controls">
+                    <div class="swiper-btn catalog-card__swiper-prev">
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-btn catalog-card__swiper-next">
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="catalog-card__content">
+                  <div class="catalog-card__title">
+                    ЖК "Три ветра" с видом на Газпром Арену
+                  </div>
+                  <div class="catalog-card__address">
+                    Адрес: г. Санкт-Петербург, ул. Ропшинская дом 4.
+                  </div>
+                  <div class="catalog-card__price">
+                    от 5000 р/ в сутки
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-card">
+                <div class="catalog-card__swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="/assets/img/card.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/img/card.png" alt="">
+                    </div>
+                  </div>
+                  <div class="catalog-card__swiper-controls">
+                    <div class="swiper-btn catalog-card__swiper-prev">
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-btn catalog-card__swiper-next">
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="catalog-card__content">
+                  <div class="catalog-card__title">
+                    ЖК "Три ветра" с видом на Газпром Арену
+                  </div>
+                  <div class="catalog-card__address">
+                    Адрес: г. Санкт-Петербург, ул. Ропшинская дом 4.
+                  </div>
+                  <div class="catalog-card__price">
+                    от 5000 р/ в сутки
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-card">
+                <div class="catalog-card__swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="/assets/img/card.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/img/card.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/img/card.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/img/card.png" alt="">
+                    </div>
+                  </div>
+                  <div class="catalog-card__swiper-controls">
+                    <div class="swiper-btn catalog-card__swiper-prev">
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-btn catalog-card__swiper-next">
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="catalog-card__content">
+                  <div class="catalog-card__title">
+                    ЖК "Три ветра" с видом на Газпром Арену
+                  </div>
+                  <div class="catalog-card__address">
+                    Адрес: г. Санкт-Петербург, ул. Ропшинская дом 4.
+                  </div>
+                  <div class="catalog-card__price">
+                    от 5000 р/ в сутки
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-card">
+                <div class="catalog-card__swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="/assets/img/card.png" alt="">
+                    </div>
+                  </div>
+                  <div class="catalog-card__swiper-controls">
+                    <div class="swiper-btn catalog-card__swiper-prev">
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-btn catalog-card__swiper-next">
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="catalog-card__content">
+                  <div class="catalog-card__title">
+                    ЖК "Три ветра" с видом на Газпром Арену
+                  </div>
+                  <div class="catalog-card__address">
+                    Адрес: г. Санкт-Петербург, ул. Ропшинская дом 4.
+                  </div>
+                  <div class="catalog-card__price">
+                    от 5000 р/ в сутки
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-card">
+                <div class="catalog-card__swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="/assets/img/card.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/assets/img/card.png" alt="">
+                    </div>
+                  </div>
+                  <div class="catalog-card__swiper-controls">
+                    <div class="swiper-btn catalog-card__swiper-prev">
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-btn catalog-card__swiper-next">
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="catalog-card__content">
+                  <div class="catalog-card__title">
+                    ЖК "Три ветра" с видом на Газпром Арену
+                  </div>
+                  <div class="catalog-card__address">
+                    Адрес: г. Санкт-Петербург, ул. Ропшинская дом 4.
+                  </div>
+                  <div class="catalog-card__price">
+                    от 5000 р/ в сутки
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="catalog__more-btn btn btn_secondary">
+              Показать (345)
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="faqs">
+        <div class="container">
+          <div class="faqs__inner">
+            <div class="faqs__title section-title">
+              <h2>Часто задаваемые вопросы</h2>
+            </div>
+            <div class="faqs__accordion js-accordion">
+              <div class="faqs__accordion-item js-accordion-item">
+                <div class="faqs__accordion-head js-accordion-head">
+                  Я забронировал(а), что дальше?
+                </div>
+                <div class="faqs__accordion-body js-accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet hic ad adipisci maiores, aut ab ratione quia modi nesciunt eligendi repudiandae, voluptate voluptatem, reprehenderit est repellendus consequuntur neque placeat sapiente!
+                </div>
+              </div>
+              <div class="faqs__accordion-item js-accordion-item">
+                <div class="faqs__accordion-head js-accordion-head">
+                  Каким сервисом бронирования выгоднее воспользоваться?
+                </div>
+                <div class="faqs__accordion-body js-accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet hic ad adipisci maiores, aut ab ratione quia modi nesciunt eligendi repudiandae, voluptate voluptatem, reprehenderit est repellendus consequuntur neque placeat sapiente!
+                </div>
+              </div>
+              <div class="faqs__accordion-item js-accordion-item">
+                <div class="faqs__accordion-head js-accordion-head">
+                  Как нам передадут ключи?
+                </div>
+                <div class="faqs__accordion-body js-accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet hic ad adipisci maiores, aut ab ratione quia modi nesciunt eligendi repudiandae, voluptate voluptatem, reprehenderit est repellendus consequuntur neque placeat sapiente!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="container">
+          <div class="partners__inner">
+            <div class="partners__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="partners__link">
+                    <div class="partners__link-bg">
+                      <img src="/assets/img/partners.jpg" alt="">
+                    </div>
+                    <div class="partners__link-text">
+                      Партнерам
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#arrow-up-right"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="partners__link">
+                    <div class="partners__link-bg">
+                      <img src="/assets/img/partners.jpg" alt="">
+                    </div>
+                    <div class="partners__link-text">
+                      Партнерам
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#arrow-up-right"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="partners__link">
+                    <div class="partners__link-bg">
+                      <img src="/assets/img/partners.jpg" alt="">
+                    </div>
+                    <div class="partners__link-text">
+                      Партнерам
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#arrow-up-right"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="partners__link">
+                    <div class="partners__link-bg">
+                      <img src="/assets/img/partners.jpg" alt="">
+                    </div>
+                    <div class="partners__link-text">
+                      Партнерам
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#arrow-up-right"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-top__inner">
+            <div class="footer-top__row">
+              <a href="#" class="footer-top__logo">
+                <div class="footer-top__logo-icon">
+                  <svg class="icon-svg">
+                    <use xlink:href="/assets/svg/sprite.svg#logo"></use>
+                  </svg>
+                </div>
+                <div class="footer-top__logo-text">
+                  SPB.RENT.APARTMENT
+                </div>
+              </a>
+              <div class="footer-top__contacts">
+                <div class="footer-top__contact">
+                  <a href="#" class="footer-top__contact-link">
+                    rentaspb198@mail.ru
+                  </a>
+                  <span class="footer-top__contact-text">
+                    Пишите, если есть вопросы
+                  </span>
+                </div>
+                <div class="footer-top__contact">
+                  <a href="#" class="footer-top__contact-link">
+                    +7 (921) 732-11-22
+                  </a>
+                  <span class="footer-top__contact-text">
+                    Звоните, если нужна помощь
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="footer-top__socials">
+              <a href="#" class="footer-top__social">
+                <img src="/assets/svg/tg.svg" alt="">
+              </a>
+              <a href="#" class="footer-top__social">
+                <img src="/assets/svg/viber.svg" alt="">
+              </a>
+              <a href="#" class="footer-top__social">
+                <img src="/assets/svg/wts.svg" alt="">
+              </a>
+              <a href="#" class="footer-top__social">
+                <img src="/assets/svg/vk.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom__inner">
+            <a href="#" class="footer-bottom__link">
+              Обработка персональных данных
+            </a>
+            <a href="#" class="footer-bottom__link">
+              Пользовательское соглашение
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>

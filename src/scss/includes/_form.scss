@@ -1,0 +1,39 @@
+.form-group {
+    position: relative;
+    width: 100%;
+    font-family: var(--second-font);
+    &__input {
+        display: block;
+        width: 100%;
+        background: #F4F6FB;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1.25;
+        outline: none;
+        border: .1rem solid #F4F6FB;
+        margin: 0;
+        padding: 1.8rem 1.6rem;
+        transition: .3s ease;
+        &:focus ~ .form-group,
+        &:not(:placeholder-shown) ~ .form-group {
+            &__label {
+                top: .7rem;
+                font-size: 1.2rem;
+                line-height: 1;
+            }
+        }
+        &:focus {
+            border-color: var(--color-primary);
+        }
+    }
+    &__label {
+        position: absolute;
+        top: 1.8rem;
+        left: 1.6rem;
+        font-size: 1.6rem;
+        line-height: 1.25;
+        color: #72778A;
+        transition: .3s ease;
+    }
+}
