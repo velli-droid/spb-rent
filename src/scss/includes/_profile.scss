@@ -1,0 +1,81 @@
+.profile {
+    position: relative;
+    z-index: auto;
+    &__toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3.2rem;
+        height: 3.2rem;
+        background: var(--color-secondary);
+        flex-shrink: 0;
+        color: var(--color-primary);
+        cursor: pointer;
+        .icon-svg {
+            display: block;
+            width: 2.4rem;
+            height: 2.4rem;
+            object-fit: contain;
+            stroke: currentColor;
+            fill: none;
+        }
+    }
+    &__body {
+        position: absolute;
+        top: calc(100% + 2.5rem);
+        right: 0;
+        transform: translate(calc(50% - 1.6rem), 1.2rem);
+        display: block;
+        width: 29.5rem;
+        padding: 2.4rem;
+        box-shadow: 0 .5rem 2.5rem rgba(5, 25, 56, 0.25);
+        pointer-events: none;
+        opacity: 0;
+        background: var(--color-white);
+        transition: transform .3s ease, opacity .3s ease;
+    }
+    &__actions {
+        display: flex;
+        flex-direction: column;
+    }
+    &__unauthorized {
+        &-text {
+            text-align: center;
+            margin-bottom: 2.4rem;
+        }
+    }
+    &__fields {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2.4rem;
+    }
+    &__field {
+        margin-bottom: 1.6rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &-prop {
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 1.43;
+            color: rgba(56, 56, 56, 0.5);
+        }
+    }
+    &__actions {
+        .btn {
+            margin-bottom: 1rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.active {
+        .profile {
+            &__body {
+                transform: translate(calc(50% - 1.6rem), 0);
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+    }
+}

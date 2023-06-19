@@ -1,3 +1,9 @@
+.scroll-down {
+    .header {
+        transform: translateY(-100%);
+    }
+}
+
 .header {
     position: sticky;
     top: 0;
@@ -5,10 +11,13 @@
     padding: 1.2rem 0;
     background: var(--color-white);
     z-index: 10;
+    transition: transform .3s ease;
     &__inner {
+        position: relative;
         display: flex;
         align-items: center;
         min-height: 4.4rem;
+        z-index: auto;
     }
     &__logo {
         display: flex;
@@ -61,24 +70,6 @@
             color: var(--color-primary);
             &:hover {
                 color: var(--color-primary-hover);
-            }
-        }
-        &-auth {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 3.2rem;
-            height: 3.2rem;
-            background: var(--color-secondary);
-            flex-shrink: 0;
-            color: var(--color-primary);
-            .icon-svg {
-                display: block;
-                width: 2.4rem;
-                height: 2.4rem;
-                object-fit: contain;
-                stroke: currentColor;
-                fill: none;
             }
         }
     }

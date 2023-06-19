@@ -3,6 +3,8 @@ import { setLayoutShift } from "./js/layout-shift";
 import { pageScrollHandler } from "./js/page-scroll-handler";
 import { accordions } from "./js/accordions";
 import { initSwipers } from "./js/swipers";
+import { initSmoothScroll } from "./js/smooth-scroll";
+import { initProfileToggle } from "./js/profile-toggle";
 
 window.addEventListener('DOMContentLoaded', () => {
     setViewportHeigth();
@@ -10,6 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
     accordions();
     pageScrollHandler();
     initSwipers();
+    initSmoothScroll();
+    initProfileToggle();
 })
 
 import 'swiper/css';

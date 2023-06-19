@@ -1,6 +1,6 @@
 html {
     font-size: clamp(4px, .56vw, 10px);
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 744px) {
         font-size: 10px;
     }
 }

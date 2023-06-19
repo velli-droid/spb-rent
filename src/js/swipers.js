@@ -2,6 +2,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 
 export function initSwipers() {
     const catalogCardsSwipers = [...document.querySelectorAll('.catalog-card__swiper')];
+    const gridSwipers = [...document.querySelectorAll('.grid-swiper')];
 
 
     if (catalogCardsSwipers.length) {
@@ -22,6 +23,12 @@ export function initSwipers() {
                 },
                 modules: [Navigation, Pagination],
             })
+        })
+    }
+
+    if (gridSwipers.length) {
+        gridSwipers.forEach(el => {
+
         })
     }
 }

@@ -12,7 +12,7 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a href="#" class="header__logo">
+          <a href="/" class="header__logo">
             <div class="header__logo-icon">
               <svg class="icon-svg">
                 <use xlink:href="/assets/svg/sprite.svg#logo"></use>
@@ -23,16 +23,16 @@
             </div>
           </a>
           <nav class="header__nav">
-            <a href="#" class="header__nav-link">
+            <a href="#advantages" class="header__nav-link">
               Преимущества
             </a>
-            <a href="#" class="header__nav-link">
+            <a href="#catalog" class="header__nav-link">
               Апартаменты
             </a>
             <a href="#" class="header__nav-link">
               Отзывы
             </a>
-            <a href="#" class="header__nav-link">
+            <a href="#faqs" class="header__nav-link">
               Ответы на вопросы
             </a>
 
@@ -41,14 +41,64 @@
             <div class="header__actions-location">
               Санкт-Петербург
             </div>
-            <a href="#" class="header__actions-phone">
+            <a href="tel:89537570288" class="header__actions-phone">
               8 953 757 0288
             </a>
-            <a href="#" class="header__actions-auth">
-              <svg class="icon-svg">
-                <use xlink:href="/assets/svg/sprite.svg#user"></use>
-              </svg>
-            </a>
+            <div class="header__actions-profile profile">
+              <div class="profile__toggle">
+                <svg class="icon-svg">
+                  <use xlink:href="/assets/svg/sprite.svg#user"></use>
+                </svg>
+              </div>
+              <div class="profile__body">
+                <!-- <div class="profile__unauthorized">
+                  <div class="profile__unauthorized-text">
+                    Войдите, чтобы забронировать апартаменты 
+                  </div>
+                  <div class="profile__actions">
+                    <a href="#" class="btn">
+                      Войти
+                    </a>
+                  </div>
+                </div> -->
+                <div class="profile__authorized">
+                  <div class="profile__fields">
+                    <div class="profile__field">
+                      <div class="profile__field-prop">
+                        Имя
+                      </div>
+                      <div class="profile__field-value">
+                        Артемий
+                      </div>
+                    </div>
+                    <div class="profile__field">
+                      <div class="profile__field-prop">
+                        Телефон
+                      </div>
+                      <div class="profile__field-value">
+                        8 953 757 0288
+                      </div>
+                    </div>
+                    <div class="profile__field">
+                      <div class="profile__field-prop">
+                        Email 
+                      </div>
+                      <div class="profile__field-value">
+                        example@mail.com
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile__actions">
+                    <a href="#" class="btn btn_secondary">
+                      Изменить данные
+                    </a>
+                    <a href="#" class="btn">
+                      Выйти
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -107,7 +157,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <div class="container">
           <div class="advantages__inner">
             <div class="advantages__title section-title">
@@ -116,45 +166,15 @@
                 В Вашем распоряжении 30 дизайнерских квартир «Comfort plus» и «Business» класса, напрямую от создателя объектов
               </span>
             </div>
-            <div class="advantages__swiper swiper">
+            <div class="advantages__swiper grid-swiper swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="advantages__card">
-                    <div class="advantages__card-bg">
+                  <div class="grid-swiper__card">
+                    <div class="grid-swiper__card-bg">
                       <img src="/assets/img/adv-1.png" alt="">
                     </div>
-                    <div class="advantages__card-text">
+                    <div class="grid-swiper__card-text">
                       Современные видовые апартаменты
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="advantages__card">
-                    <div class="advantages__card-bg">
-                      <img src="/assets/img/adv-2.png" alt="">
-                    </div>
-                    <div class="advantages__card-text">
-                      Квартиры с новой мебельюв актуальном стиле
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="advantages__card">
-                    <div class="advantages__card-bg">
-                      <img src="/assets/img/adv-3.png" alt="">
-                    </div>
-                    <div class="advantages__card-text">
-                      Удаленное заселениепо личному паролю
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="advantages__card">
-                    <div class="advantages__card-bg">
-                      <img src="/assets/img/adv-4.png" alt="">
-                    </div>
-                    <div class="advantages__card-text">
-                      Трансфер по договоренности
                     </div>
                   </div>
                 </div>
@@ -163,7 +183,7 @@
           </div>
         </div>
       </section>
-      <section class="catalog">
+      <section class="catalog" id="catalog">
         <div class="container">
           <div class="catalog__inner">
             <div class="catalog__title section-title">
@@ -399,7 +419,7 @@
           </div>
         </div>
       </section>
-      <section class="faqs">
+      <section class="faqs" id="faqs">
         <div class="container">
           <div class="faqs__inner">
             <div class="faqs__title section-title">
@@ -437,59 +457,47 @@
       <section class="partners">
         <div class="container">
           <div class="partners__inner">
-            <div class="partners__swiper swiper">
+            <div class="partners__swiper grid-swiper swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <a href="#" class="partners__link">
-                    <div class="partners__link-bg">
+                  <div class="grid-swiper__card">
+                    <div class="grid-swiper__card-bg">
                       <img src="/assets/img/partners.jpg" alt="">
                     </div>
-                    <div class="partners__link-text">
-                      Партнерам
-                      <svg class="icon-svg">
-                        <use xlink:href="/assets/svg/sprite.svg#arrow-up-right"></use>
-                      </svg>
+                    <div class="grid-swiper__card-text">
+                      Современные видовые апартаменты
                     </div>
-                  </a>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <a href="#" class="partners__link">
-                    <div class="partners__link-bg">
+                  <div class="grid-swiper__card">
+                    <div class="grid-swiper__card-bg">
                       <img src="/assets/img/partners.jpg" alt="">
                     </div>
-                    <div class="partners__link-text">
-                      Партнерам
-                      <svg class="icon-svg">
-                        <use xlink:href="/assets/svg/sprite.svg#arrow-up-right"></use>
-                      </svg>
+                    <div class="grid-swiper__card-text">
+                      Современные видовые апартаменты
                     </div>
-                  </a>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <a href="#" class="partners__link">
-                    <div class="partners__link-bg">
+                  <div class="grid-swiper__card">
+                    <div class="grid-swiper__card-bg">
                       <img src="/assets/img/partners.jpg" alt="">
                     </div>
-                    <div class="partners__link-text">
-                      Партнерам
-                      <svg class="icon-svg">
-                        <use xlink:href="/assets/svg/sprite.svg#arrow-up-right"></use>
-                      </svg>
+                    <div class="grid-swiper__card-text">
+                      Современные видовые апартаменты
                     </div>
-                  </a>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <a href="#" class="partners__link">
-                    <div class="partners__link-bg">
+                  <div class="grid-swiper__card">
+                    <div class="grid-swiper__card-bg">
                       <img src="/assets/img/partners.jpg" alt="">
                     </div>
-                    <div class="partners__link-text">
-                      Партнерам
-                      <svg class="icon-svg">
-                        <use xlink:href="/assets/svg/sprite.svg#arrow-up-right"></use>
-                      </svg>
+                    <div class="grid-swiper__card-text">
+                      Современные видовые апартаменты
                     </div>
-                  </a>
+                  </div>
                 </div>
               </div>
             </div>
