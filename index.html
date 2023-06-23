@@ -12,6 +12,11 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
+          <div class="header__burger js-header-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <a href="/" class="header__logo">
             <div class="header__logo-icon">
               <svg class="icon-svg">
@@ -22,21 +27,57 @@
               SPB.RENT.APARTMENT
             </div>
           </a>
-          <nav class="header__nav">
-            <a href="#advantages" class="header__nav-link">
-              Преимущества
-            </a>
-            <a href="#catalog" class="header__nav-link">
-              Апартаменты
-            </a>
-            <a href="#" class="header__nav-link">
-              Отзывы
-            </a>
-            <a href="#faqs" class="header__nav-link">
-              Ответы на вопросы
-            </a>
-
-          </nav>
+          <div class="header__menu js-jump-menu">
+            <div class="header__menu-wrapper">
+              <div class="header__menu-actions">
+                <div class="header__menu-location">
+                  Санкт-Петербург
+                </div>
+                <a href="tel:89537570288" class="header__menu-phone">
+                  8 953 757 0288
+                </a>
+              </div>
+              <nav class="header__nav">
+                <a href="#advantages" class="header__nav-link">
+                  Преимущества
+                </a>
+                <a href="#catalog" class="header__nav-link">
+                  Апартаменты
+                </a>
+                <a href="#reviews" class="header__nav-link">
+                  Отзывы
+                </a>
+                <a href="#faqs" class="header__nav-link">
+                  Ответы на вопросы
+                </a>
+              </nav>
+              <div class="header__menu-contacts">
+                <div class="header__menu-contact">
+                  <a href="#" class="header__menu-contact-link">
+                    rentaspb198@mail.ru
+                  </a>
+                  <span class="header__menu-contact-text">
+                    Пишите, если есть вопросы
+                  </span>
+                </div>
+              </div>
+              <div class="header__menu-socials">
+                <a href="#" class="header__menu-social">
+                  <img src="/assets/svg/tg.svg" alt="">
+                </a>
+                <a href="#" class="header__menu-social">
+                  <img src="/assets/svg/viber.svg" alt="">
+                </a>
+                <a href="#" class="header__menu-social">
+                  <img src="/assets/svg/wts.svg" alt="">
+                </a>
+                <a href="#" class="header__menu-social">
+                  <img src="/assets/svg/vk.svg" alt="">
+                </a>
+              </div>
+            </div>
+            
+          </div>
           <div class="header__actions">
             <div class="header__actions-location">
               Санкт-Петербург
@@ -51,17 +92,17 @@
                 </svg>
               </div>
               <div class="profile__body">
-                <!-- <div class="profile__unauthorized">
+                <div class="profile__unauthorized">
                   <div class="profile__unauthorized-text">
                     Войдите, чтобы забронировать апартаменты 
                   </div>
                   <div class="profile__actions">
-                    <a href="#" class="btn">
+                    <a href="#" class="btn js-open-modal-btn" data-target="auth">
                       Войти
                     </a>
                   </div>
-                </div> -->
-                <div class="profile__authorized">
+                </div>
+                <!-- <div class="profile__authorized">
                   <div class="profile__fields">
                     <div class="profile__field">
                       <div class="profile__field-prop">
@@ -96,7 +137,7 @@
                       Выйти
                     </a>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -108,7 +149,11 @@
         <div class="container">
           <div class="intro__inner">
             <div class="intro__bg">
-              <img src="/assets/img/intro.png" alt="">
+              <picture>
+                <source srcset="/assets/img/intro_tablet.png" media="(max-width: 744px)">
+                <source srcset="/assets/img/intro_mob.png" media="(max-width: 640px)">
+                <img src="/assets/img/intro.png" alt="">
+              </picture> 
             </div>
             <div class="intro__title">
               <h1>Апартаменты и квартиры в Санкт-Петербурге</h1> 
@@ -168,6 +213,36 @@
             </div>
             <div class="advantages__swiper grid-swiper swiper">
               <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="grid-swiper__card">
+                    <div class="grid-swiper__card-bg">
+                      <img src="/assets/img/adv-1.png" alt="">
+                    </div>
+                    <div class="grid-swiper__card-text">
+                      Современные видовые апартаменты
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="grid-swiper__card">
+                    <div class="grid-swiper__card-bg">
+                      <img src="/assets/img/adv-1.png" alt="">
+                    </div>
+                    <div class="grid-swiper__card-text">
+                      Современные видовые апартаменты
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="grid-swiper__card">
+                    <div class="grid-swiper__card-bg">
+                      <img src="/assets/img/adv-1.png" alt="">
+                    </div>
+                    <div class="grid-swiper__card-text">
+                      Современные видовые апартаменты
+                    </div>
+                  </div>
+                </div>
                 <div class="swiper-slide">
                   <div class="grid-swiper__card">
                     <div class="grid-swiper__card-bg">
@@ -460,44 +535,56 @@
             <div class="partners__swiper grid-swiper swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="grid-swiper__card">
+                  <a href="#" class="grid-swiper__card">
                     <div class="grid-swiper__card-bg">
                       <img src="/assets/img/partners.jpg" alt="">
                     </div>
-                    <div class="grid-swiper__card-text">
-                      Современные видовые апартаменты
+                    <div class="grid-swiper__card-link">
+                      Партнерам
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#arrow-up-right"></use>
+                      </svg>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <div class="grid-swiper__card">
+                  <a href="#" class="grid-swiper__card">
                     <div class="grid-swiper__card-bg">
                       <img src="/assets/img/partners.jpg" alt="">
                     </div>
-                    <div class="grid-swiper__card-text">
-                      Современные видовые апартаменты
+                    <div class="grid-swiper__card-link">
+                      Партнерам
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#arrow-up-right"></use>
+                      </svg>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <div class="grid-swiper__card">
+                  <a href="#" class="grid-swiper__card">
                     <div class="grid-swiper__card-bg">
                       <img src="/assets/img/partners.jpg" alt="">
                     </div>
-                    <div class="grid-swiper__card-text">
-                      Современные видовые апартаменты
+                    <div class="grid-swiper__card-link">
+                      Партнерам
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#arrow-up-right"></use>
+                      </svg>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <div class="grid-swiper__card">
+                  <a href="#" class="grid-swiper__card">
                     <div class="grid-swiper__card-bg">
                       <img src="/assets/img/partners.jpg" alt="">
                     </div>
-                    <div class="grid-swiper__card-text">
-                      Современные видовые апартаменты
+                    <div class="grid-swiper__card-link">
+                      Партнерам
+                      <svg class="icon-svg">
+                        <use xlink:href="/assets/svg/sprite.svg#arrow-up-right"></use>
+                      </svg>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -569,6 +656,46 @@
         </div>
       </div>
     </footer>
+    <div class="modal js-modal" data-modal="auth">
+      <div class="modal__wrapper js-modal-wrapper">
+        <div class="modal__close js-modal-close">
+          <svg class="icon-svg">
+            <use xlink:href="/assets/svg/sprite.svg#close"></use>
+          </svg>
+        </div>
+        <div class="modal__title">
+          Войдите, чтобы продолжить
+        </div>
+        <form action="#" class="modal__form">
+          <div class="form-group">
+            <input type="text" class="form-group__input" id="auth-1" placeholder=" ">
+            <label for="auth-1" class="form-group__label">
+              Ваше имя*
+            </label>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-group__input" id="auth-2" placeholder=" ">
+            <label for="auth-2" class="form-group__label">
+              Email
+            </label>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-group__input" id="auth-1" placeholder=" ">
+            <label for="auth-1" class="form-group__label">
+              Ваш телефон*
+            </label>
+          </div>
+          <div class="form-submit">
+            <button class="form-submit__btn btn">
+              Войти
+            </button>
+            <div class="form-submit__text">
+              Нажимая кнопку я соглашаюсь согласие на обработку <br> <a href="#">персональных данных</a> 
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
     <script type="module" src="./src/app.js"></script>
   </body>
 </html>

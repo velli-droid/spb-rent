@@ -78,4 +78,16 @@
             }
         }
     }
+    @media only screen and (max-width: 744px) {
+        &__body {
+            transform: translate(0, 1.2rem);
+        }
+        &.active {
+            .profile {
+                &__body {
+                    transform: translate(0, 0);
+                }
+            }
+        }
+    }
 }

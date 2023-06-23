@@ -8,4 +8,20 @@
         width: 38.4rem;
         margin: 4rem auto 0;
     }
+    @media only screen and (max-width: 744px) {
+        &__grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            grid-gap: 0;
+        }
+        &__more-btn {
+            margin: 1rem auto 0;
+        }
+    }
+    @media only screen and (max-width: 640px) {
+        &__more-btn {
+            width: 100%;
+        }
+    }
 }

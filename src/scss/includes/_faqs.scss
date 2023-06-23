@@ -23,13 +23,13 @@
         &-head {
             position: relative;
             width: 100%;
-            padding-right: 3.2rem;
             font-weight: 500;
             font-size: 2.4rem;
             line-height: 1.33;
             color: #383838;
             opacity: 0.8;
             padding: 2rem 0;
+            padding-right: 3.2rem;
             cursor: pointer;
             &::after {
                 content: '';
@@ -50,6 +50,22 @@
             max-height: 0;
             max-width: 50%;
             transition: .3s ease;
+        }
+    }
+    @media only screen and (max-width: 744px) { 
+        &__accordion {
+            &-body {
+                max-width: 100%;
+            }
+        }
+    }
+    @media only screen and (max-width: 640px) {
+        &__accordion {
+            &-head {
+                font-size: 2rem;
+                line-height: 140%;
+                padding: 1.6rem 3.2rem 1.6rem 0;
+            }
         }
     }
 }

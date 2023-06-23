@@ -107,4 +107,57 @@
             }
         }
     }
+    @media only screen and (max-width: 744px) { 
+        &-top {
+            padding: 3rem 0;
+            &__row {
+                flex-direction: column;
+            }
+            &__logo {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+            &__contacts {
+                flex-direction: column;
+            }
+            &__contact {
+                margin-right: 0;
+                margin-bottom: 1.6rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 640px) {
+        &-top {
+            &__logo {
+                &-icon {
+                    margin-right: .8rem;
+                }
+                &-text {
+                    font-size: 1.2rem;
+                }
+            }
+            &__contact {
+                &-link {
+                    font-size: 1.6rem;
+                    line-height: 138%;
+                }
+            }
+        }
+        &-bottom {
+            &__inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            &__link {
+                margin-right: 0;
+                margin-bottom: 1rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }
