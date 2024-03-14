@@ -7,6 +7,7 @@ import { initSwipers } from "./js/swipers";
 import { initSmoothScroll } from "./js/smooth-scroll";
 import { initProfileToggle } from "./js/profile-toggle";
 import { initModals } from "./js/modals";
+import { setPhoneMask } from "./js/phone-mask";
 
 window.addEventListener('DOMContentLoaded', () => {
     headerMenu();
@@ -18,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initProfileToggle();
     initModals();
+    setPhoneMask();
 })
 
 import 'swiper/css';

@@ -13,4 +13,8 @@
         <path d="M9.33325 22.6666L22 10" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
         <path d="M9.33325 9.33325H22.6666V22.6666" stroke-width="2" stroke-linecap="square"/>
     </symbol>
+    <symbol id="close" viewBox="0 0 32 32">
+        <path d="M8.00146 22.12L9.88146 24L17.8815 16L9.88147 8L8.00147 9.88L14.1081 16L8.00146 22.12Z" />
+        <path d="M23.9985 9.88L22.1185 8L14.1185 16L22.1185 24L23.9985 22.12L17.8918 16L23.9985 9.88Z" />
+    </symbol>
 </svg>

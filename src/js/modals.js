@@ -35,10 +35,10 @@ export function initModals() {
             });
 
             setLayoutShift();
+            document.body.classList.add('modal-open');
             setTimeout(() => {
                 targetModal.classList.add('active');
             }, 100)
-            document.body.classList.add('modal-open');
         })
     })
 }

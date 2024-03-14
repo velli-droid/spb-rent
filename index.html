@@ -664,29 +664,63 @@
           </svg>
         </div>
         <div class="modal__title">
-          Войдите, чтобы продолжить
+          Авторизация
         </div>
         <form action="#" class="modal__form">
           <div class="form-group">
-            <input type="text" class="form-group__input" id="auth-1" placeholder=" ">
-            <label for="auth-1" class="form-group__label">
-              Ваше имя*
-            </label>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-group__input" id="auth-2" placeholder=" ">
-            <label for="auth-2" class="form-group__label">
-              Email
-            </label>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-group__input" id="auth-1" placeholder=" ">
+            <input type="text" class="form-group__input js-phone-mask" id="auth-1" placeholder=" ">
             <label for="auth-1" class="form-group__label">
               Ваш телефон*
             </label>
           </div>
           <div class="form-submit">
             <button class="form-submit__btn btn">
+              Войти
+            </button>
+            <button class="form-submit__btn btn btn_secondary js-open-modal-btn" data-target="registration">
+              Регистрация
+            </button>
+            <div class="form-submit__text">
+              Нажимая кнопку я соглашаюсь согласие на обработку <br> <a href="#">персональных данных</a> 
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal js-modal" data-modal="registration">
+      <div class="modal__wrapper js-modal-wrapper">
+        <div class="modal__close js-modal-close">
+          <svg class="icon-svg">
+            <use xlink:href="/assets/svg/sprite.svg#close"></use>
+          </svg>
+        </div>
+        <div class="modal__title">
+          Регистрация
+        </div>
+        <form action="#" class="modal__form">
+          <div class="form-group">
+            <input type="text" class="form-group__input" id="registration-1" placeholder=" ">
+            <label for="registration-1" class="form-group__label">
+              Ваше имя*
+            </label>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-group__input js-phone-mask" id="registration-3" placeholder=" ">
+            <label for="registration-3" class="form-group__label">
+              Ваш телефон*
+            </label>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-group__input" id="registration-2" placeholder=" ">
+            <label for="registration-2" class="form-group__label">
+              Email
+            </label>
+          </div>
+          <div class="form-submit">
+            <button class="form-submit__btn btn">
+              Зарегистрироваться
+            </button>
+            <button class="form-submit__btn btn btn_secondary js-open-modal-btn" data-target="auth">
               Войти
             </button>
             <div class="form-submit__text">
