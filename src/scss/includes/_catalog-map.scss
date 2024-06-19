@@ -1,0 +1,29 @@
+.catalog-map {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: calc(100vh - 7rem);
+    min-height: 60rem;
+    &__search {
+        padding: 1.6rem 0;
+        border-top: 1px solid var(--color-secondary);
+        &-form {
+            display: flex;
+            gap: 2.4rem;
+        }
+        &-fields {
+            display: flex;
+            gap: .6rem;
+            flex-grow: 1;
+        }
+        &-actions {
+            flex-shrink: 0;
+            width: 17.4rem;
+        }
+    }
+}
+
+.map-card-wrapper {
+    position: relative;
+}

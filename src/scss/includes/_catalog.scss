@@ -3,6 +3,25 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 4rem 3.2rem;
+        .catalog-card {
+            &:nth-child(n + 7) {
+                display: none;
+            }
+        }
+        &.show-all {
+            .catalog-card {
+                &:nth-child(n + 7) {
+                    display: flex;
+                }
+            }
+        }
+    }
+    &__spinner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 20rem;
     }
     &__more-btn {
         width: 38.4rem;

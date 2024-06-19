@@ -10,17 +10,20 @@ export function initModals() {
         const closeBtn = modal.querySelector('.js-modal-close');
         const modalWrapper = modal.querySelector('.js-modal-wrapper');
 
-        closeBtn.onclick = (e) => {
+        closeBtn.addEventListener('click', (e) => {
             e.preventDefault();
             modal.classList.remove('active');
             document.body.classList.remove('modal-open');
-        }
+            console.log(e)
+        })  
 
-        modal.onclick = (e) => {
-            if (e.composedPath().includes(modalWrapper)) return;
-            modal.classList.remove('active');
-            document.body.classList.remove('modal-open');
-        }
+        modal.addEventListener('click', (e) => {
+            if (!modalWrapper.contains(e.target)) {
+                modal.classList.remove('active');
+                document.body.classList.remove('modal-open');
+                console.log('modalClick')
+            }
+        })
     })
 
     openModalBtns.forEach(btn => {
@@ -36,9 +39,7 @@ export function initModals() {
 
             setLayoutShift();
             document.body.classList.add('modal-open');
-            setTimeout(() => {
-                targetModal.classList.add('active');
-            }, 100)
+            targetModal.classList.add('active');
         })
     })
 }

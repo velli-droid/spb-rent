@@ -13,7 +13,13 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "@pbe/react-yandex-maps": "^1.2.5",
+    "axios": "^1.7.2",
+    "html-react-parser": "^5.1.10",
     "imask": "^7.5.0",
-    "swiper": "^9.3.2"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-spinners": "^0.13.8",
+    "swiper": "^9.4.1"
   }
 }

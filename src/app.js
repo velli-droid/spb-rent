@@ -6,8 +6,10 @@ import { accordions } from "./js/accordions";
 import { initSwipers } from "./js/swipers";
 import { initSmoothScroll } from "./js/smooth-scroll";
 import { initProfileToggle } from "./js/profile-toggle";
-import { initModals } from "./js/modals";
+import { initModals } from "./js/init-modals";
 import { setPhoneMask } from "./js/phone-mask";
+import { initCatalogFiltration } from "./js/catalog-fitration";
+import { initMapFiltration } from "./js/map-filtration";
 
 window.addEventListener('DOMContentLoaded', () => {
     headerMenu();
@@ -20,6 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initProfileToggle();
     initModals();
     setPhoneMask();
+    initCatalogFiltration();
+    initMapFiltration();
 })
 
 import 'swiper/css';

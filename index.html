@@ -161,30 +161,24 @@
             <div class="intro__text">
               Онлайн-агрегатор для посуточной аренды
             </div>
-            <form action="#" class="intro__form">
+            <form class="intro__form js-catalog-search-form">
               <div class="intro__form-fields">
                 <div class="form-group">
-                  <input type="text" class="form-group__input" id="input-date-1" placeholder=" ">
+                  <input type="text" name="begin_date" class="form-group__input" id="input-date-1" placeholder=" ">
                   <label for="input-date-1" class="form-group__label">
                     Заезд
                   </label>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-group__input" id="input-date-2" placeholder=" ">
+                  <input type="text" name="end_date" class="form-group__input" id="input-date-2" placeholder=" ">
                   <label for="input-date-2" class="form-group__label">
                     Отъезд
                   </label>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-group__input" id="input-count" placeholder=" ">
+                  <input type="text" name="humans" class="form-group__input" id="input-count" placeholder=" ">
                   <label for="input-count" class="form-group__label">
                     Количество гостей
-                  </label>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-group__input" id="input-5" placeholder=" ">
-                  <label for="input-5" class="form-group__label">
-                    Промокод
                   </label>
                 </div>
               </div>
@@ -194,9 +188,9 @@
                     Найти
                   </button>
                 </div>
-                <a href="#" class="intro__form-map btn btn_secondary">
+                <button class="intro__form-map btn btn_secondary">
                   Показать на карте
-                </a>
+                </button>
               </div>
             </form>
           </div>
@@ -258,242 +252,7 @@
           </div>
         </div>
       </section>
-      <section class="catalog" id="catalog">
-        <div class="container">
-          <div class="catalog__inner">
-            <div class="catalog__title section-title">
-              <h2>Апартаменты</h2>
-            </div>
-            <div class="catalog__grid">
-              <div class="catalog-card">
-                <div class="catalog-card__swiper swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="/assets/img/card.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="/assets/img/card.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="/assets/img/card.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="/assets/img/card.png" alt="">
-                    </div>
-                  </div>
-                  <div class="catalog-card__swiper-controls">
-                    <div class="swiper-btn catalog-card__swiper-prev">
-                      <svg class="icon-svg">
-                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
-                      </svg>
-                    </div>
-                    <div class="swiper-btn catalog-card__swiper-next">
-                      <svg class="icon-svg">
-                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <div class="catalog-card__content">
-                  <div class="catalog-card__title">
-                    ЖК "Три ветра" с видом на Газпром Арену
-                  </div>
-                  <div class="catalog-card__address">
-                    Адрес: г. Санкт-Петербург, ул. Ропшинская дом 4.
-                  </div>
-                  <div class="catalog-card__price">
-                    от 5000 р/ в сутки
-                  </div>
-                </div>
-              </div>
-              <div class="catalog-card">
-                <div class="catalog-card__swiper swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="/assets/img/card.png" alt="">
-                    </div>
-                  </div>
-                  <div class="catalog-card__swiper-controls">
-                    <div class="swiper-btn catalog-card__swiper-prev">
-                      <svg class="icon-svg">
-                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
-                      </svg>
-                    </div>
-                    <div class="swiper-btn catalog-card__swiper-next">
-                      <svg class="icon-svg">
-                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <div class="catalog-card__content">
-                  <div class="catalog-card__title">
-                    ЖК "Три ветра" с видом на Газпром Арену
-                  </div>
-                  <div class="catalog-card__address">
-                    Адрес: г. Санкт-Петербург, ул. Ропшинская дом 4.
-                  </div>
-                  <div class="catalog-card__price">
-                    от 5000 р/ в сутки
-                  </div>
-                </div>
-              </div>
-              <div class="catalog-card">
-                <div class="catalog-card__swiper swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="/assets/img/card.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="/assets/img/card.png" alt="">
-                    </div>
-                  </div>
-                  <div class="catalog-card__swiper-controls">
-                    <div class="swiper-btn catalog-card__swiper-prev">
-                      <svg class="icon-svg">
-                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
-                      </svg>
-                    </div>
-                    <div class="swiper-btn catalog-card__swiper-next">
-                      <svg class="icon-svg">
-                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <div class="catalog-card__content">
-                  <div class="catalog-card__title">
-                    ЖК "Три ветра" с видом на Газпром Арену
-                  </div>
-                  <div class="catalog-card__address">
-                    Адрес: г. Санкт-Петербург, ул. Ропшинская дом 4.
-                  </div>
-                  <div class="catalog-card__price">
-                    от 5000 р/ в сутки
-                  </div>
-                </div>
-              </div>
-              <div class="catalog-card">
-                <div class="catalog-card__swiper swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="/assets/img/card.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="/assets/img/card.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="/assets/img/card.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="/assets/img/card.png" alt="">
-                    </div>
-                  </div>
-                  <div class="catalog-card__swiper-controls">
-                    <div class="swiper-btn catalog-card__swiper-prev">
-                      <svg class="icon-svg">
-                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
-                      </svg>
-                    </div>
-                    <div class="swiper-btn catalog-card__swiper-next">
-                      <svg class="icon-svg">
-                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <div class="catalog-card__content">
-                  <div class="catalog-card__title">
-                    ЖК "Три ветра" с видом на Газпром Арену
-                  </div>
-                  <div class="catalog-card__address">
-                    Адрес: г. Санкт-Петербург, ул. Ропшинская дом 4.
-                  </div>
-                  <div class="catalog-card__price">
-                    от 5000 р/ в сутки
-                  </div>
-                </div>
-              </div>
-              <div class="catalog-card">
-                <div class="catalog-card__swiper swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="/assets/img/card.png" alt="">
-                    </div>
-                  </div>
-                  <div class="catalog-card__swiper-controls">
-                    <div class="swiper-btn catalog-card__swiper-prev">
-                      <svg class="icon-svg">
-                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
-                      </svg>
-                    </div>
-                    <div class="swiper-btn catalog-card__swiper-next">
-                      <svg class="icon-svg">
-                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <div class="catalog-card__content">
-                  <div class="catalog-card__title">
-                    ЖК "Три ветра" с видом на Газпром Арену
-                  </div>
-                  <div class="catalog-card__address">
-                    Адрес: г. Санкт-Петербург, ул. Ропшинская дом 4.
-                  </div>
-                  <div class="catalog-card__price">
-                    от 5000 р/ в сутки
-                  </div>
-                </div>
-              </div>
-              <div class="catalog-card">
-                <div class="catalog-card__swiper swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="/assets/img/card.png" alt="">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="/assets/img/card.png" alt="">
-                    </div>
-                  </div>
-                  <div class="catalog-card__swiper-controls">
-                    <div class="swiper-btn catalog-card__swiper-prev">
-                      <svg class="icon-svg">
-                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
-                      </svg>
-                    </div>
-                    <div class="swiper-btn catalog-card__swiper-next">
-                      <svg class="icon-svg">
-                        <use xlink:href="/assets/svg/sprite.svg#swiper-arrow"></use>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <div class="catalog-card__content">
-                  <div class="catalog-card__title">
-                    ЖК "Три ветра" с видом на Газпром Арену
-                  </div>
-                  <div class="catalog-card__address">
-                    Адрес: г. Санкт-Петербург, ул. Ропшинская дом 4.
-                  </div>
-                  <div class="catalog-card__price">
-                    от 5000 р/ в сутки
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="catalog__more-btn btn btn_secondary">
-              Показать (345)
-            </button>
-          </div>
-        </div>
-      </section>
+      <section class="catalog" id="catalog"></section>
       <section class="faqs" id="faqs">
         <div class="container">
           <div class="faqs__inner">
@@ -664,67 +423,30 @@
           </svg>
         </div>
         <div class="modal__title">
-          Авторизация
+          Укажие телефон
+        </div>
+        <div class="modal__text">
+          Введите номер телефона,
+          чтобы войти или зарегистрироваться
         </div>
         <form action="#" class="modal__form">
-          <div class="form-group">
-            <input type="text" class="form-group__input js-phone-mask" id="auth-1" placeholder=" ">
-            <label for="auth-1" class="form-group__label">
-              Ваш телефон*
-            </label>
-          </div>
-          <div class="form-submit">
-            <button class="form-submit__btn btn">
-              Войти
-            </button>
-            <button class="form-submit__btn btn btn_secondary js-open-modal-btn" data-target="registration">
-              Регистрация
-            </button>
-            <div class="form-submit__text">
-              Нажимая кнопку я соглашаюсь согласие на обработку <br> <a href="#">персональных данных</a> 
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="modal js-modal" data-modal="registration">
-      <div class="modal__wrapper js-modal-wrapper">
-        <div class="modal__close js-modal-close">
-          <svg class="icon-svg">
-            <use xlink:href="/assets/svg/sprite.svg#close"></use>
-          </svg>
-        </div>
-        <div class="modal__title">
-          Регистрация
-        </div>
-        <form action="#" class="modal__form">
-          <div class="form-group">
-            <input type="text" class="form-group__input" id="registration-1" placeholder=" ">
-            <label for="registration-1" class="form-group__label">
-              Ваше имя*
-            </label>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-group__input js-phone-mask" id="registration-3" placeholder=" ">
-            <label for="registration-3" class="form-group__label">
-              Ваш телефон*
-            </label>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-group__input" id="registration-2" placeholder=" ">
-            <label for="registration-2" class="form-group__label">
-              Email
-            </label>
-          </div>
-          <div class="form-submit">
-            <button class="form-submit__btn btn">
-              Зарегистрироваться
-            </button>
-            <button class="form-submit__btn btn btn_secondary js-open-modal-btn" data-target="auth">
-              Войти
-            </button>
-            <div class="form-submit__text">
-              Нажимая кнопку я соглашаюсь согласие на обработку <br> <a href="#">персональных данных</a> 
+          <div class="auth-stepper">
+            <div class="auth-stepper__step">
+              <div class="form-group">
+                <input type="text" class="form-group__input js-phone-mask" id="auth-1" placeholder=" ">
+                <label for="auth-1" class="form-group__label">
+                  Ваш телефон*
+                </label>
+              </div>
+              <div class="form-submit">
+                <button class="form-submit__btn btn">
+                  Продолжить
+                </button>
+                <div class="form-submit__text">
+                  При входе или регистрации вы принимаете
+                  условия <br> <a href="#">пользовательского соглашения</a> 
+                </div>
+              </div>
             </div>
           </div>
         </form>

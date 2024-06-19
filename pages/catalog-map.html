@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Istok+Web&display=swap" rel="stylesheet">
+    <title>SPB.RENT.APARTMENT</title>
+  </head>
+  <body>
+    <header class="header">
+    <div class="container">
+        <div class="header__inner">
+        <div class="header__burger js-header-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a href="/" class="header__logo">
+            <div class="header__logo-icon">
+            <svg class="icon-svg">
+                <use xlink:href="/assets/svg/sprite.svg#logo"></use>
+            </svg>
+            </div>
+            <div class="header__logo-text">
+            SPB.RENT.APARTMENT
+            </div>
+        </a>
+        <div class="header__menu js-jump-menu">
+            <div class="header__menu-wrapper">
+            <div class="header__menu-actions">
+                <div class="header__menu-location">
+                Санкт-Петербург
+                </div>
+                <a href="tel:89537570288" class="header__menu-phone">
+                8 953 757 0288
+                </a>
+            </div>
+            <nav class="header__nav">
+                <a href="#advantages" class="header__nav-link">
+                Преимущества
+                </a>
+                <a href="#catalog" class="header__nav-link">
+                Апартаменты
+                </a>
+                <a href="#reviews" class="header__nav-link">
+                Отзывы
+                </a>
+                <a href="#faqs" class="header__nav-link">
+                Ответы на вопросы
+                </a>
+            </nav>
+            <div class="header__menu-contacts">
+                <div class="header__menu-contact">
+                <a href="#" class="header__menu-contact-link">
+                    rentaspb198@mail.ru
+                </a>
+                <span class="header__menu-contact-text">
+                    Пишите, если есть вопросы
+                </span>
+                </div>
+            </div>
+            <div class="header__menu-socials">
+                <a href="#" class="header__menu-social">
+                <img src="/assets/svg/tg.svg" alt="">
+                </a>
+                <a href="#" class="header__menu-social">
+                <img src="/assets/svg/viber.svg" alt="">
+                </a>
+                <a href="#" class="header__menu-social">
+                <img src="/assets/svg/wts.svg" alt="">
+                </a>
+                <a href="#" class="header__menu-social">
+                <img src="/assets/svg/vk.svg" alt="">
+                </a>
+            </div>
+            </div>
+            
+        </div>
+        <div class="header__actions">
+            <div class="header__actions-location">
+            Санкт-Петербург
+            </div>
+            <a href="tel:89537570288" class="header__actions-phone">
+            8 953 757 0288
+            </a>
+            <div class="header__actions-profile profile">
+            <div class="profile__toggle">
+                <svg class="icon-svg">
+                <use xlink:href="/assets/svg/sprite.svg#user"></use>
+                </svg>
+            </div>
+            <div class="profile__body">
+                <div class="profile__unauthorized">
+                <div class="profile__unauthorized-text">
+                    Войдите, чтобы забронировать апартаменты 
+                </div>
+                <div class="profile__actions">
+                    <a href="#" class="btn js-open-modal-btn" data-target="auth">
+                    Войти
+                    </a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </header>
+    <main class="main">
+        <section class="catalog-map" id="catalog-map"></section>
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="footer-top__inner">
+              <div class="footer-top__row">
+                <a href="#" class="footer-top__logo">
+                  <div class="footer-top__logo-icon">
+                    <svg class="icon-svg">
+                      <use xlink:href="/assets/svg/sprite.svg#logo"></use>
+                    </svg>
+                  </div>
+                  <div class="footer-top__logo-text">
+                    SPB.RENT.APARTMENT
+                  </div>
+                </a>
+                <div class="footer-top__contacts">
+                  <div class="footer-top__contact">
+                    <a href="#" class="footer-top__contact-link">
+                      rentaspb198@mail.ru
+                    </a>
+                    <span class="footer-top__contact-text">
+                      Пишите, если есть вопросы
+                    </span>
+                  </div>
+                  <div class="footer-top__contact">
+                    <a href="#" class="footer-top__contact-link">
+                      +7 (921) 732-11-22
+                    </a>
+                    <span class="footer-top__contact-text">
+                      Звоните, если нужна помощь
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-top__socials">
+                <a href="#" class="footer-top__social">
+                  <img src="/assets/svg/tg.svg" alt="">
+                </a>
+                <a href="#" class="footer-top__social">
+                  <img src="/assets/svg/viber.svg" alt="">
+                </a>
+                <a href="#" class="footer-top__social">
+                  <img src="/assets/svg/wts.svg" alt="">
+                </a>
+                <a href="#" class="footer-top__social">
+                  <img src="/assets/svg/vk.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="footer-bottom__inner">
+              <a href="#" class="footer-bottom__link">
+                Обработка персональных данных
+              </a>
+              <a href="#" class="footer-bottom__link">
+                Пользовательское соглашение
+              </a>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <div class="modal js-modal" data-modal="auth">
+    <div class="modal__wrapper js-modal-wrapper">
+        <div class="modal__close js-modal-close">
+        <svg class="icon-svg">
+            <use xlink:href="/assets/svg/sprite.svg#close"></use>
+        </svg>
+        </div>
+        <div class="modal__title">
+        Укажие телефон
+        </div>
+        <div class="modal__text">
+        Введите номер телефона,
+        чтобы войти или зарегистрироваться
+        </div>
+        <form action="#" class="modal__form">
+        <div class="auth-stepper">
+            <div class="auth-stepper__step">
+            <div class="form-group">
+                <input type="text" class="form-group__input js-phone-mask" id="auth-1" placeholder=" ">
+                <label for="auth-1" class="form-group__label">
+                Ваш телефон*
+                </label>
+            </div>
+            <div class="form-submit">
+                <button class="form-submit__btn btn">
+                Продолжить
+                </button>
+                <div class="form-submit__text">
+                При входе или регистрации вы принимаете
+                условия <br> <a href="#">пользовательского соглашения</a> 
+                </div>
+            </div>
+            </div>
+        </div>
+        </form>
+    </div>
+    </div>
+    <script type="module" src="../src/app.js"></script>
+  </body>
+</html>
